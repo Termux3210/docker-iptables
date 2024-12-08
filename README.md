@@ -57,29 +57,7 @@
 
 ## Docker Compose
 
-Для развертывания всех сервисов используется файл `docker-compose.yaml`. Пример конфигурации:
-
-```yaml
-services:
-  wg-easy:
-    environment:
-      - WG_HOST=10.2.0.3
-      ...
-    image: ghcr.io/wg-easy/wg-easy
-    ...
-
-  peer:
-    build: .
-    ...
-
-  gateway:
-    image: nicolaka/netshoot
-    ...
-
-  nginx:
-    image: nginx
-    ...
-```
+Для развертывания всех сервисов используется файл `docker-compose.yaml`. 
 
 ### Сети
 
